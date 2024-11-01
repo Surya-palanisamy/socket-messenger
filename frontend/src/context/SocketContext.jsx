@@ -15,11 +15,14 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("https://chat-app-yt.onrender.com", {
-				query: {
-					userId: authUser._id,
-				},
-			});
+			const socket = io(
+        "https://socket-messenger-2h8i-m8t6lyrp3-suryas-projects-08be89cb.vercel.app/",
+        {
+          query: {
+            userId: authUser._id,
+          },
+        }
+      );
 
 			setSocket(socket);
 

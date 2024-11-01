@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["https://socket-messenger-2h8i.vercel.app"],
+    origin: ["*"],
     methods: ["GET", "POST"],
   },
 });

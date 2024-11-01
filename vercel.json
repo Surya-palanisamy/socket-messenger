@@ -19,8 +19,5 @@
       "src": "/(.*)",
       "dest": "frontend/dist/$1"
     }
-  ],
-  "start": {
-    "command": "npm run start"
-  }
+  ]
 }
